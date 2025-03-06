@@ -1,0 +1,259 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "productId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "manufacturer",
+						"type": "address"
+					}
+				],
+				"name": "ProductRegistered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "productId",
+						"type": "string"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "newLocation",
+						"type": "string"
+					}
+				],
+				"name": "ProductTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getAllProducts",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "productId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "manufacturer",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "currentCustodian",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "currentLocation",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "manufactureDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "transferCount",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SupplyChain.Product[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_productId",
+						"type": "string"
+					}
+				],
+				"name": "getProduct",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "productId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "manufacturer",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "currentCustodian",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "currentLocation",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "manufactureDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "transferCount",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SupplyChain.Product",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_productId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_manufacturer",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					}
+				],
+				"name": "registerProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_productId",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_newCustodian",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_newLocation",
+						"type": "string"
+					}
+				],
+				"name": "transferCustodian",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/myContract.sol": "SupplyChain"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/myContract.sol": {
+			"keccak256": "0xfb47ed433c0bba0a5efbc080a1a83c309a7dc5180cbf430ad372c6912d16f5d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d619b6e98adb0a6c46bb5ae778e88e095214d7a9b7558f089cfa8545a75a2930",
+				"dweb:/ipfs/Qma5QoJBq459Reof2CRy9NuZpCr4ZzEy2FcZQjSgoGgFmq"
+			]
+		}
+	},
+	"version": 1
+}
