@@ -63,6 +63,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "adminAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getAllProducts",
 				"outputs": [
 					{
@@ -247,11 +260,11 @@
 	},
 	"sources": {
 		"contracts/myContract.sol": {
-			"keccak256": "0xfb47ed433c0bba0a5efbc080a1a83c309a7dc5180cbf430ad372c6912d16f5d1",
+			"keccak256": "0x8b468a9c8a095b3a7e8ae635c652d85df55024cf5358ffffe86d23525c8385e8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d619b6e98adb0a6c46bb5ae778e88e095214d7a9b7558f089cfa8545a75a2930",
-				"dweb:/ipfs/Qma5QoJBq459Reof2CRy9NuZpCr4ZzEy2FcZQjSgoGgFmq"
+				"bzz-raw://94a2131d293ebaca555932a45820b9ccbce92250cfad1de2c7194397f0464a1a",
+				"dweb:/ipfs/QmQZxzq7jNvnHrrxRfDK2snuHqjEEQJktHtgxr6bPXaGj9"
 			]
 		}
 	},
