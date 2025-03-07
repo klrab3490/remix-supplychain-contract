@@ -80,6 +80,11 @@ contract SupplyChain {
         return allProducts;
     }
 
+    function getProductById(string memory _productId) public view returns (Product memory) {
+        require(productExists(_productId), "Product does not exist");
+        return products[_productId];
+    }
+
     function getProductIds() external view returns (string[] memory) {
         return productIds;
     }
